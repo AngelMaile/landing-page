@@ -1,118 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer Profile</title>
-    <link rel="stylesheet" href="homeLight.css" />
-    <link rel="shortcut icon" href="webIcon.png"  type="image/x-icon">
-  </head>
-  <body>
-    <div class="profile-container">
-      <div class="logo animated-logo">
-        <img src="logoLight.png" alt="logo" />
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Maile - Web & App Developer</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="webIcon.png" type="image/x-icon">
+</head>
+<body>
 
-      <h1 class="title">Angel Maile</h1>
-      <p class="subtitle">Web & App Developer</p>
-
-      <div class="tags">
-        <span class="tag">Flutter</span>
-        <span class="tag">iOS</span>
-        <span class="tag">Android</span>
-      </div>
-
-      <div class="button-row">
-        <div class="btn-wrapper">
-          <button class="btn youtube-btn">
-            📺 YouTube <span class="badge">150K+</span>
-          </button>
-          <div class="panel">
-            <div class="panel-item">
-              <strong>Visit Channel</strong><br />Watch tutorials & dev content
+    <main class="container">
+        
+        <div class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </div>
+        <header class="profile-header">
+            <img src="logoLight.png" alt="Angel Maile Logo" class="profile-logo">
+            <h1>Angel Maile</h1>
+            <p>App Developer</p>
+            <div class="tags">
+                <span>Flutter</span>
+                <span>iOS</span>
+                <span>Android</span>
             </div>
-            <div class="panel-item">
-              <strong>Flutter Beginner Course (1.2M+)</strong><br />Start here •
-              full fundamentals
-            </div>
-          </div>
-        </div>
+        </header>
 
-        <div class="btn-wrapper">
-          <button class="btn">📱 Apps</button>
-          <div class="panel">
-            <div class="panel-item">
-              <strong>Ritualz</strong><br />Habit Tracker
-            </div>
-            <div class="panel-item">
-              <strong>Tuteee</strong><br />AI Personal Tutor
-            </div>
-            <div class="panel-item">
-              <strong>Tuteee</strong><br />AI Personal Tutor
-            </div>
-            <div class="panel-item">
-              <strong>Tuteee</strong><br />AI Personal Tutor
-            </div>
-            <div class="panel-item">
-              <strong>Tuteee</strong><br />AI Personal Tutor
-            </div>
-          </div>
-        </div>
+        <section class="links">
+            <a href="#" class="link-card">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+            <a href="#" class="link-card">
+                <i class="fas fa-mobile-alt"></i>
+                <span>📲Apps</span>
+            </a>
+            <a href="#" class="link-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span>Course</span>
+            </a>
+            <a href="#" class="link-card">
+                <i class="fas fa-link"></i>
+                <span>Connect</span>
+            </a>
+        </section>
 
-        <div class="btn-wrapper">
-          <button class="btn">🎓 Course</button>
-          <div class="panel">
-            <div class="panel-item">
-              <strong>Build Launch Monetize</strong><br />Complete indie-dev
-              playbook
-            </div>
-          </div>
-        </div>
-
-        <div class="btn-wrapper">
-          <button class="btn">🔗 Connect</button>
-          <div class="panel">
-            <div class="panel-item">X (Twitter)</div>
-            <div class="panel-item">Instagram</div>
-            <div class="panel-item">Email</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PANELS -->
-      <div class="panel" id="youtubePanel">
-        <div class="panel-item">
-          <strong>Visit Channel</strong><br />Watch tutorials & dev content
-        </div>
-        <div class="panel-item">
-          <strong>Flutter Beginner Course (1.2M+)</strong><br />Start here •
-          full fundamentals
-        </div>
-      </div>
-
-      <div class="panel" id="appsPanel">
-        <div class="panel-item">
-          <strong>Ritualz</strong><br />Habit Tracker
-        </div>
-        <div class="panel-item">
-          <strong>Tuteee</strong><br />AI Personal Tutor
-        </div>
-      </div>
-
-      <div class="panel" id="coursePanel">
-        <div class="panel-item">
-          <strong>Build Launch Monetize</strong><br />Complete indie-dev
-          playbook
-        </div>
-      </div>
-
-      <div class="panel" id="connectPanel">
-        <div class="panel-item">X (Twitter)</div>
-        <div class="panel-item">Instagram</div>
-        <div class="panel-item">Email</div>
-      </div>
-    </div>
+        <footer class="footer-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </footer>
+    </main>
 
     <script src="home.js"></script>
-  </body>
+</body>
 </html>

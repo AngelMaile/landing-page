@@ -1,27 +1,47 @@
-// DESKTOP: dropdowns open on hover (CSS handles this)
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- Dark Mode Toggle Logic ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    // Function to set the theme and save preference
+    const set_theme = (theme) => {
+        if (theme === 'dark') {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+        localStorage.setItem('theme', theme); // Save preference
+    };
 
-// MOBILE: dropdowns open on tap
-const wrappers = document.querySelectorAll(".btn-wrapper");
-
-wrappers.forEach(wrapper => {
-    wrapper.addEventListener("click", () => {
-        if (window.innerWidth <= 768) {
-            // Close other dropdowns
-            wrappers.forEach(w => {
-                if (w !== wrapper) w.classList.remove("active");
-            });
-
-            // Toggle this one
-            wrapper.classList.toggle("active");
+    // Click event for the toggle
+    themeToggle.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+            set_theme('light');
+        } else {
+            set_theme('dark');
         }
     });
-});
 
-// Close when clicking outside
-window.addEventListener("click", (e) => {
-    if (window.innerWidth <= 768) {
-        if (!e.target.closest(".btn-wrapper")) {
-            wrappers.forEach(w => w.classList.remove("active"));
-        }
-    }
+    // Check for saved theme in local storage on page load
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    set_theme(currentTheme);
+
+    // --- End of Dark Mode Logic ---
+
+
+    // Your original code
+    console.log('Angel Maile website loaded'); // Updated this to match your HTML
+    
+    const allLinks = document.querySelectorAll('a');
+    
+    allLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            // You could add a class here
+        });
+        
+        link.addEventListener('mouseleave', () => {
+            // And remove it here
+        });
+    });
 });
