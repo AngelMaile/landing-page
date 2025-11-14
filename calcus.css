@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #ebefff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1300px;
+}
+
+/* PHONE MOCKUP (FIXED) */
+.phone-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 60px 90px rgba(0, 0, 0, 0.30))
+            drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
+}
+
+
+
+.phone {
+    width: 350px;                 /* wider & more realistic */
+    height: 720px;                /* taller = like modern phones */
+    background: #000;
+    border-radius: 48px;          /* smoother curve like your screenshot */
+    padding: 14px;                /* even bezel */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;            /* your screenshot fills correctly */
+    border-radius: 38px;          /* matches inner screen radius */
+}
+
+
+/* RIGHT SIDE TEXT */
+.text-section {
+    max-width: 420px;
+}
+
+.logo-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #666;
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+    margin: 30px 0;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+    font-size: 16px;
+}
+
+.store-btn img {
+    height: 20px;
+}
+
+.store-btn.black {
+    background: #000;
+    color: white;
+}
+
+.store-btn.white {
+    background: white;
+    border: 1px solid #ddd;
+    color: #222;
+}
+
+.store-btn:hover {
+    transform: scale(1.03);
+}
+
+.footer {
+    margin-top: 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+}
